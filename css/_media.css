@@ -1,0 +1,208 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+.hidden-mnu ul {
+	margin:0;
+}
+.header-title h1 {
+font-size: 1.83em;	
+}
+
+
+}
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.header-title h1 {
+font-size: 1.7em;	
+}
+.offering-block, .timetable, .price-two, .predlog, .price-block  {
+	padding:15px 0;
+}
+.timetable h2,  .price h2 {
+	padding-bottom: 20px;
+}
+
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+h2 {
+    font-size: 1.9em;
+}
+.top-line  {
+height:100px;
+}
+.logo {
+	margin-left: 65px;
+
+}
+.phone {
+text-align: center;
+}
+.header-title {
+	padding:10% 0;
+}
+.header-title h1 {
+font-size: 1.9em;	
+}
+.forma-header {
+	margin:15% auto 25%;
+}
+.offering-block, .timetable, .price-two, .predlog, .price-block  {
+	padding:60px 0;
+}
+.timetable-next {
+	padding: 40px 0;
+}
+.offering-block-img, .price-block-img {
+	padding-top: 10px;
+}
+.predlog-h3 {
+  font-size: 1.05em;
+  padding:20px 30px;
+   }
+     .wrap {
+     	margin-bottom: 10px;
+     }
+     .wrap-p {
+text-align: center;
+margin-bottom: 5px;
+}
+.wrap-img {
+display: none;
+}
+   .wrap-too {
+	margin-top:0;
+}
+.timetable h2,  .price-two h2 {
+	padding-bottom: 20px;
+}
+.timetable-wrap {
+width:95%;
+margin:3px auto;
+}
+.price .button{
+width: 250px;
+height: 90px;
+font-size: 1.7em;
+line-height: 90px;
+}
+.price .button{
+margin:120px auto; 
+}
+}
+@media only screen and (max-width : 640px) {
+.price .button{
+margin:50px auto; 
+width: 250px;
+height: 70px;
+font-size: 1.4em;
+line-height: 70px;
+}
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.top-line  {
+height:200px;}
+.logo {
+	margin-left: 45px;}
+.offering-block-img, .price-block-img {
+	padding-top: 2px;}
+.header-title h1 {
+font-size: 1.8em;	
+}
+.forma-header {
+	margin:20% auto 25%;
+}
+.button{
+width: 300px;
+height: 90px;
+font-size: 1.7em;
+text-align: center;
+line-height: 90px;
+}
+.price-prog {
+	margin:50px auto; 
+}
+.price-prog h3
+{
+font-size: 1.4em;
+line-height: 1.5;
+}
+.price .button{
+	margin:50px auto; 
+width: 250px;
+height: 90px;
+font-size: 1.7em;
+line-height: 90px;
+}
+
+}
+
+@media only screen and (max-width : 360px) {
+.top-line  {
+height:200px;
+}
+.header-title h1 {
+font-size: 1.8em;	
+}
+.forma-header {
+	margin:15% auto 25%;
+}
+.button{
+width: 250px;
+height: 80px;
+font-size: 1.5em;
+text-align: center;
+line-height: 80px;
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+.top-line  {
+height:200px;
+}
+
+.header-title h1 {
+font-size: 1.6em;	
+}
+
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) and (max-width : 768px)  {
+.top-line  {
+height:200px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
