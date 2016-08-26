@@ -7,33 +7,245 @@
 
 /* Medium Devices, Desktops от 0 до 991 пикселей sm*/
 @media only screen and (max-width : 991px) {
-
+.header-title {
+margin:300px 0;
+}
 
 
 }
 /* Small Devices, Tablets 0 до 767 пикселей xs  */
 @media only screen and (max-width : 767px) {
+.footer-text, .footer-cosial ul {
+text-align: center;
+}
+
  
 }
-@media only screen and (max-width : 514px) {
 
-
+@media only screen and (min-width : 481px) and (max-width : 572px)  {
+.logo img {
+width: 30px;
+height: 32px;
 }
+.logo-text {
+font-size: 1.49em;
+}
+
+.phone {
+font-size:1.300em;
+margin-top:20px;
+}
+.header-title {
+margin:300px 0;
+}
+.header-title h1 {
+font-size: 4.500em;
+}
+.preim-block-h3 {
+font-size: 1.000em;
+}
+.button-call{text-align:center;
+margin: 0;
+float: none;
+}
+.forma-header p {
+    text-align: center;
+margin-top: 10px;
+}
+
+.top {
+   width: 25px;
+height: 25px; 
+bottom: 80px;
+}
+.top .fa {
+font-size: 1em;
+}
+.top.active {
+right: 20px;
+}
+.footer-text, .footer-cosial ul{ 
+    text-align: center;
+}
+
+
+    }
+
+
+
+
 /* Extra Small Devices, Phones 0 до 480 пикселей  */
 @media only screen and (max-width : 480px) {
+.logo img {
+width: 30px;
+height: 32px;
+}
+.logo-text {
+font-size: 1.49em;
+}
 
+.phone {
+font-size:1.300em;
+margin-top:20px;
+}
+.header-title {
+margin:300px 0;
+}
+.header-title h1 {
+font-size: 4.500em;
+}
+.preim-block-h3 {
+font-size: 1.000em;
+}
+.button-call{text-align:center;
+margin: 0;
+float: none;
+}
+.forma-header p {
+    text-align: center;
+margin-top: 10px;
+}
 
+.footer-text, .footer-cosial ul{
+    text-align: center;
+}
 
 
 }
+
+/* 0 до 360 пикселей  */
+@media only screen and (max-width : 360px)
+{
+h2 {
+font-size: 2.00em;line-height: 1.5;
+}
+p {
+font-size: 1.00em;
+}
+.header-title h1:before {
+bottom:18px;
+width:74%;
+left:13%;
+}
+
+.phone {
+font-size:0.930em;
+margin-top:30px;
+margin-left: 0;
+}
+.header-title {
+margin:300px 0;
+}
+.header-title h1 {
+font-size: 4.500em;
+}
+.preim-block {
+width: 75px;
+height: 75px;
+}
+.preim-block i {
+font-size: 1.350em;
+color: #fff;
+line-height: 75px;
+}
+
+.preim-block-h3 {
+font-size: 0.800em;
+}
+
+.preim-block-p { 
+font-size: 0.700em;
+text-align: left;
+}
+.mfp-close {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+}
+.portfolio-popup .mfp-close {
+top: 22px;
+}
+ .footer-cosial ul{ 
+    text-align: left;
+}
+.top.active {
+right: 10px;
+}
+.footer-cosial ul{
+text-align: center;
+}
+}
+
+
+
+
+
 /* Extra Small Devices, Phones 0 до 320 пикселей  */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 320px)
+{
+.phone {
+font-size:0.800em;
+margin-top:35px;
+margin-left: 0;
+}
+.header-title {
+margin:300px 0;
+}
+.header-title h1 {
+font-size: 4.000em;
+}
+.header-title h2 {
+font-size: 1.100em;
+line-height: 1.9;
+ }
+
+
+.preim-block-h3 {
+font-size: 0.750em;
+font-weight: 500;
+}
+
+.preim-block-p { 
+font-size: 0.700em;
+text-align: left;
+}
+.top {
+bottom: 70px;
+}
+.top.active {
+right: 20px;
+}
+
+
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* от 992 до 1199 пикселей  */
-@media only screen and (min-width : 992px) and (max-width: 1199px) {
+@media only screen and (min-width : 768px) and (max-width: 900px) {
+.top {
+bottom: 80px;
+}
+
+.top.active {
+right: 20px;
+}
+
 
 
 }
