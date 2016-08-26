@@ -38,12 +38,16 @@ body {
 
 .top-line
 {
+z-index: 1;
+position: fixed;
 height:100px;
+width: 100%;
 background-color: rgb(255, 255, 255);
 text-align: center;
 border-bottom: 1px solid #000;
 }
 .logo {
+
 	text-align: left;
 margin-top: 31px;
 }
@@ -82,15 +86,20 @@ display: block;
 padding:15px 20px;
 color:#000;
 border:1px solid #fff;
--webkit-transition: background-color 0.5s ease, color .7s ease-out;
--moz-transition: background-color 0.5s ease, color .7s ease-out;
-transition: background-color 0.5s ease, color .7s ease-out;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+transition: all 0.9s ease;
 }
 
 .top-menu ul li a:hover {
 color:#60523c;
 
 }
+.top-menu ul li a:focus, .angle-down a:focus {
+outline: none;
+}
+
+
 
 .top-menu ul li a:before{
 content:"";
@@ -99,23 +108,32 @@ border:1px solid #fff;
 bottom:6px;
 width:92%;
 left:4%;
--webkit-transition: border 0.5s ease, color .7s ease-out;
--moz-transition: border 0.5s ease, color .7s ease-out;
-transition: border 0.5s ease, color .7s ease-out;
+-webkit-transition: all 0.9s ease;
+-moz-transition: all 0.9s ease;
+transition: all 0.9s ease;
 }
 
 .top-menu ul li a:hover:before {
 border:1px solid #60523c;
 }
+.top-menu .active-item ul li a:before{
+border:1px solid red;
+transition: all 0.9s ease;
+
+}
+
+
 /*конец оформления кнопки  меню*/
 
 /*оформление 2 меню для адаптива*/
 .hidden-mnu {
-background-color:rgba(40, 40, 38, 0.10);
+background-color: rgba(45, 57, 80, 0.90);
 display: block;
 position: absolute;
 width:100%;
+top: 0;
 left:0;
+margin-top:19px;
 z-index:1;
 }
 
@@ -135,7 +153,7 @@ color:#fff;
 }
 
 .hidden-mnu ul li a:hover{
-background-color:rgba(40, 40, 38, 0.60);
+background-color: rgba(45, 57, 80, 1);
 color:#fff;
 
 }
@@ -348,9 +366,10 @@ color: rgb(153, 153, 153);
 
 .portfolio 
  {
-width: 100%;
+max-width: 100%;
 overflow: hidden;
-margin: : 0 auto; position: relative;
+margin: 0 auto;
+ position: relative;
 
 }
 .block-pad p {
@@ -417,25 +436,35 @@ overflow:hidden;
 
 .portfolio-popup {
 position:relative;
+left: 0;
 display: block;
 text-align: center;
-max-width:910px;
-margin:5% auto;
+min-width:90%;
+text-align: center;
+margin: 0 auto;
 padding-top: 15px;
+padding-left: 0;
 }
 
 .portfolio-popup img {
-max-width:100%;
+width:90%;
 height:auto;
+text-align: center;
+}
+.portfolio-popup .mfp-close {
+position: absolute;
+right: 8%;
+top: 18px;
+
 }
 
+
 .mfp-close-btn-in .mfp-close {
-background-color: #fa4b15;opacity: 1;
+background-color: #fa4b15;
+opacity: 1;
 color: rgb(255, 255, 255);
 font-weight: bold;
-position: absolute;
-right: 50px;
-top: 18px;
+
 } 
 
 .mfp-close-btn-in .mfp-close:hover {
@@ -579,9 +608,11 @@ color:#fff;
 
 /*оформление всплывающей формы а ниже и благодарности */
 .forms-calldecor {
-	-webkit-transition:all .3s ease;
-	transition:all .3s ease;
-	position: relative;
+position: relative;
+	background-color:rgba(0, 0, 0, 0.5);
+	-webkit-transition:all 0.5s ease;
+	
+	
 	-moz-transition: all 0.5s else;
 	transition: all 0.5s else;
 	max-width: 480px;
@@ -604,6 +635,7 @@ width: 90%;
 	float: none;
 	text-align: center;
 	color: #fff;
+	margin-bottom: 40px;
 }
 
 .forms-calldecor .mfp-close
@@ -611,6 +643,7 @@ width: 90%;
 position: absolute;
 right: 15px;
 top: 15px;
+ border-radius: 3px;
 
 }
 .forms-calldecor .mfp-close-btn-in .mfp-close {
@@ -667,7 +700,7 @@ right: -120px;
 width: 50px;
 height: 50px;
 border-radius: 50%;
-background-color: rgb(94,182,182);
+background-color:rgb(21, 164, 250);
 cursor: pointer;
 text-align: center;
 opacity: .3;

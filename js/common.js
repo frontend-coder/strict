@@ -2,8 +2,20 @@ $(document).ready(function() {
 
 // одинаковой высоты разные по длине ашки
  $(".preim-block-p").equalHeights();
-
+ $(".preim-block-h3").equalHeights();
   
+	// Плавный скролл по якорям плагин PageScroll2id
+	$(".top-menu ul li a, .angle-down a").mPageScroll2id({
+		offset: ".top-line",
+		  layout:"auto",
+		scrollEasing: "linear",
+		highlightByNextTarget: true,
+		keepHighlightUntilNext: true,
+		 autoScrollSpeed: true,
+		scrollSpeed : 1200
+	});
+      
+
 
 
 // вверхнее красиво-вращающееся меню
@@ -34,34 +46,25 @@ type:'inline',
 
 
 
-	//Навигация по Landing Page
-	//$(".top_mnu") - это верхняя панель со ссылками.
-	//Ссылки вида <a href="#contacts">Контакты</a>
-	$(".top_mnu").navigation();
+	
 
 	//Добавляет классы дочерним блокам .block для анимации
 	//Документация: http://imakewebthings.com/jquery-waypoints/
-	$(".block").waypoint(function(direction) {
-		if (direction === "down") {
-			$(".class").addClass("active");
-		} else if (direction === "up") {
-			$(".class").removeClass("deactive");
-		};
-	}, {offset: 100});
+	// $(".block").waypoint(function(direction) {
+	// 	if (direction === "down") {
+	// 		$(".class").addClass("active");
+	// 	} else if (direction === "up") {
+	// 		$(".class").removeClass("deactive");
+	// 	};
+	// }, {offset: 100});
 
-	//Плавный скролл до блока .div по клику на .scroll
-	//Документация: https://github.com/flesler/jquery.scrollTo
-	$("a.scroll").click(function() {
-		$.scrollTo($(".div"), 800, {
-			offset: -90
-		});
-	});
+
 
 //Кнопка наверх с права от контента
 $("body").append('<div class="top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>');
 // Заставляет кнопку работать как ссылку на самый вверх
 $("body").on("click", ".top", function() {
-	$("html, body").animate({scrollTop: 0}, "slow");
+	$("html, body").animate({scrollTop: 0}, 1200);
 });
 // Заставляет прятаться кнопку, если посетитель на хедере
 $(window).scroll(function() {
