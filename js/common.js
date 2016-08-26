@@ -14,10 +14,7 @@ $(document).ready(function() {
 		 autoScrollSpeed: true,
 		scrollSpeed : 1200
 	});
-      
-
-
-
+ 
 // вверхнее красиво-вращающееся меню
 // 1 и 2 строка это анимация крестика
 //3 строка - слайдер вниз меню
@@ -27,20 +24,17 @@ $(".top-menu").slideToggle();
 return false;
 });
 
-
 // галерея всплывающая
 $(".portfolio-item").each(function(e){
 var th = $(this);
 th.attr("href", "#portfolio-image-" + e)
 .find(".portfolio-popup")
 .attr("id", "portfolio-image-" + e);
-
 });
 $(".portfolio-item").magnificPopup({
 mainClass: 'my-mfp-zoom-in',
 removalDelay:300,
 type:'inline',
-
 });
 
 
