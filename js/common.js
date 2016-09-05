@@ -38,22 +38,6 @@ type:'inline',
 });
 
 
-
-
-	
-
-	//Добавляет классы дочерним блокам .block для анимации
-	//Документация: http://imakewebthings.com/jquery-waypoints/
-	// $(".block").waypoint(function(direction) {
-	// 	if (direction === "down") {
-	// 		$(".class").addClass("active");
-	// 	} else if (direction === "up") {
-	// 		$(".class").removeClass("deactive");
-	// 	};
-	// }, {offset: 100});
-
-
-
 //Кнопка наверх с права от контента
 $("body").append('<div class="top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>');
 // Заставляет кнопку работать как ссылку на самый вверх
@@ -96,7 +80,7 @@ $("form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "/mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
 			$(".forms-calldecor .success").addClass("active");
