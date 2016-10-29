@@ -83,7 +83,7 @@ position: relative;
 display: block;
 padding:15px 20px;
 color:#000;
-border:1px solid #fff;
+
 -webkit-transition: all 0.9s ease;
 -moz-transition: all 0.9s ease;
 transition: all 0.9s ease;
@@ -121,7 +121,7 @@ transition: all 0.9s ease;
 /*оформление 2 меню для адаптива*/
 .hidden-mnu {
 background-color: rgba(45, 57, 80, 0.90);
-display: block;
+display: none;
 position: absolute;
 width:100%;
 top: 0;
